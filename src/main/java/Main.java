@@ -15,6 +15,6 @@ public class Main {
         System.out.println(user4);
 
         list.removeUser(user1);
-        
+
     }
 }
