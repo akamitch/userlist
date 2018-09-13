@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.test.di</groupId>
+    <groupId>com.example.userlist</groupId>
     <artifactId>userlist</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -28,7 +28,7 @@
     </dependencies>
 
     <build>
-        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+        <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
                     <artifactId>maven-clean-plugin</artifactId>
@@ -64,7 +64,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>com.test.di.Main</mainClass>
+                                <mainClass>com.example.userlist.Main</mainClass>
                             </manifest>
                         </archive>
                         <descriptorRefs>
@@ -82,6 +82,6 @@
                     </executions>
                 </plugin>
             </plugins>
-        </pluginManagement>
+
     </build>
 </project>
