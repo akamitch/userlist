@@ -1,3 +1,5 @@
+package com.example.userlist;
+
 interface UserList {
     void addUser(User user);
     void removeUser(User user);

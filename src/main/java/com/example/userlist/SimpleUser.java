@@ -1,3 +1,5 @@
+package com.example.userlist;
+
 public class SimpleUser implements User {
     private String name;
 

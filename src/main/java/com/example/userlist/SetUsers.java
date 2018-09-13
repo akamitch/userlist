@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package com.example.userlist;
+
 import java.util.HashSet;
 
 public class SetUsers implements UserList {
