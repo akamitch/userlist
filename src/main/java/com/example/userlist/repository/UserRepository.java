@@ -15,5 +15,5 @@ public interface UserRepository {
 
     void removeByName(String name);
 
-    User saveUser();
+    User saveUser(User user);
 }
