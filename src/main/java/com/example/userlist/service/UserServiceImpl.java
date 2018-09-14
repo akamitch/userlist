@@ -1,9 +1,7 @@
 package com.example.userlist.service;
 
-import com.example.userlist.Exeptions.NameExeption;
-import com.example.userlist.Exeptions.NoSuchName;
+import com.example.userlist.Exeptions.NoSuchNameExeption;
 import com.example.userlist.Exeptions.NotAllowedNameException;
-import com.example.userlist.Exeptions.SuchNameAlreadyUsedExeption;
 import com.example.userlist.model.User;
 import com.example.userlist.repository.UserRepository;
 
@@ -39,12 +37,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findByName(String name) throws NoSuchName {
+    public User findByName(String name) throws NoSuchNameExeption {
         Optional<User> userO = this.userRepository.findByName(name);
         if (userO.isPresent()) {
             return userO.get();
         }else {
-            throw new NoSuchName();
+            throw new NoSuchNameExeption();
         }
         //return null;
     }
@@ -59,7 +57,7 @@ public class UserServiceImpl implements UserService {
             this.userRepository.saveUser(user);
 
         }else {
-            throw new NoSuchName();
+            throw new NoSuchNameExeption();
         }
 
     }

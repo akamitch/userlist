@@ -40,7 +40,7 @@ public class UserRepositoryImpl implements UserRepository {
     @Override
     public void removeByName(String name) {
         Optional<User> found = findByName(name);
-        
+
         if (found.isPresent()) {
             list.remove(found.get());
         }
